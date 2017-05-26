@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- fa datei -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- css datei -->
+<link rel="stylesheet" href="design.css">
+<!-- zeichenset -->
+<meta charset="ISO-8859-1">
+<!-- favicon -->
+<link rel="icon" href="favicon.ico">
+<title>HfT Wetterstation</title>
+</head>
+
+<!-- body Teil -->
+<body>
+<!-- fester Hintergrund green -->
+<body style="background-image:url(green.jpg)">
+<!-- Navigation-->
+<nav id="n">
+<a id="m1" href="http://hftwetter.is-great.net/index.html">&nbsp;|&nbsp;<i class="fa fa-home" aria-hidden="true">&nbsp;Home&nbsp;|</i>&nbsp;</a>
+<a id="m2" href="http://hftwetter.is-great.net/downloads.html"><i class="fa fa-download" aria-hidden="true">&nbsp;Downloads&nbsp;|</i></a>
+<a id="m3" href="webanwendung.html"><i class="fa fa-user-md" aria-hidden="true">&nbsp;Wetterdaten&nbsp;|</i></a>
+      </nav>
+<!-- Titel/Logo -->
+<table id="t0"><h1 id="h1">Wetterstation</h1>
+<h2 id="h2">auf Basis vom Raspberry Pi</h2></table>
+<!-- Anwendung-->
+<div  id="t1"><p id="s1">Wetterdaten der letzten 30 Tage</p>
+<form method="post" action="ServletAnwendung"><p id="s2"></br></br>
+<input type="radio" name="wD" value="Temperatur">Temperatur</input>
+<input type="radio" name="wD" value="Luftfeuchtigkeit">Luftfeuchtigkeit</input>
+<input type="radio" name="wD" value="Lärmpegelstand">Lärmpegelstand</input>
+<input type="submit" value="Abfrage starten" id="subbutt"/></br></br></br></br></br></br></br></br></br>
+</form></p></div>
+<!-- footer-->
+<footer>
+<p id="cc">&#169; Copyright 2017<a style="text-decoration: none;color:	#7FFFD4;text-shadow: 0 0 5px black;" href="http://hftwetter.is-great.net"> HfT Wetterstation</a></p>
+<!-- ab hier nichts mehr hinzufügen -->
+<!-- Hintergrundbild ändern -->
+<p id="bt"><button id="b1" onclick="document.body.style = 'background-image:url(green.jpg);'"> green</a>
+<button id="b2" onclick="document.body.style = 'background-image:url(orange.jpg);'"> orange</a>
+<button id="b3" onclick="document.body.style = 'background-image:url(blue.jpg);'"> blue</a>
+</footer>
+</body>
+
+</html>
